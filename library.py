@@ -52,6 +52,6 @@ class Book:
     	pub_date = input(date)
     	call_number = input("Enter call number")
 
-        give_away(Book)
+    give_away(Book)
 
 class Person
