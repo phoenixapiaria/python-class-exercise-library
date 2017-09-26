@@ -3,6 +3,11 @@ Exercise about objects & classes, using a library as an example
 
 # User stories
 
+## Add a book to the library
+
+Bob, a librarian, wants to create a book & add it to the library.
+
+
 ## Renewal
 
 Alice, a borrower, wants to renew a book so that she can continue to read it.
