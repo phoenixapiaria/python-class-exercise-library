@@ -46,11 +46,14 @@ class Book:
 
 	#prompts to enter all the new book information
     def create(title, author, subject, pub_date, call_number)
-    	title = input("Enter title")
-    	author = input("Enter one or more authors")
-    	subject = input("Enter one or more subjects")
-    	pub_date = input(date)
-    	call_number = input("Enter call number")
+        if person is a librarian:
+        	title = input("Enter title")
+        	author = input("Enter one or more authors")
+        	subject = input("Enter one or more subjects")
+        	pub_date = input(date)
+        	call_number = input("Enter call number")
+        else:
+            "Sorry, you can't add books."
 
     give_away(Book)
 
