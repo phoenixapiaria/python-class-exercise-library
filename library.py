@@ -29,6 +29,18 @@ class Book:
 
         check_in(Book)
         hold(book, hold_for_person)
+        def hold(book, hold_for_person):
+            #check to see if hold_for_person is a borrower
+            if (hold_for_person is a Person who is_Borrower):
+                #make sure the book is already checked out
+                if (book is checked out):
+                    #check to see whether others have put the book on hold
+                    if (book is not on hold):
+                        place book on hold
+                        hold_for_person's position in line is 1
+                    else:
+                        hold_for_person's position in line is # of people in line + 1
+
         renew(book, new_return_date)
 
         # def renew(which_book, due_date):
