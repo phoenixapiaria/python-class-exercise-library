@@ -43,7 +43,7 @@ class Book:
                             hold_for_person's position in line is # of people in line + 1
                     else:
                         say "You can check this out"
-                else: say "Sorry, you can't borrow this book"
+                else: say "Sorry, you can't borrow this book" 
             else: say "Sorry, you can't place holds unless you're a librarian."
 
         renew(book, new_return_date)
