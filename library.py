@@ -12,6 +12,7 @@ class Book:
         borrower: Person
         return_date: date
         hold_for: Person
+        checked_out: Boolean
 
     # methods:
         check_out(Book, borrower, return_date)
@@ -25,6 +26,7 @@ class Book:
                     Print a message ... cannot borrow but for 180 days.
                     Use the 180th day as the return date
                 Book.return_date = return_date
+                Book.checked_out = True
             else (explain this person cannot borrow books)
 
         check_in(Book)
@@ -41,7 +43,6 @@ class Book:
                             book.hold = True
                             hold_for.line_position = 1
                         else:
-                            hold_for.line_position =
                         print("This book is available for checkout.")
                 else:
                     print("Sorry, you can't check out this book.")
