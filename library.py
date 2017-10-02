@@ -37,12 +37,14 @@ class Book:
             #check to see if hold_for_person is a borrower
                 if (hold_for = is_Borrower):
                 #make sure the book is already checked out
-                    if (Book is checked out):
+                    if (Book.checked_out = True):
                     #check to see whether others have put the book on hold
                         if (book.hold != True):
                             book.hold = True
                             hold_for.line_position = 1
                         else:
+                            hold_for.line_position = line_length + 1
+                        line_length = hold_for.line_position
                         print("This book is available for checkout.")
                 else:
                     print("Sorry, you can't check out this book.")
