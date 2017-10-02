@@ -29,23 +29,22 @@ class Book:
 
         check_in(Book)
         hold(book, hold_for_person)
-        def hold(book, hold_for_person, Person):
+        def hold(Book, hold_for, Person):
         #check to see if the person doing the hold is a librarian
-            if Person is librarian
+            if Person = is_Librarian
             #check to see if hold_for_person is a borrower
-                if (hold_for_person is a Person who is_Borrower):
+                if (hold_for = is_Borrower):
                 #make sure the book is already checked out
-                    if (book is checked out):
+                    if (Book is checked out):
                     #check to see whether others have put the book on hold
-                        if (book is not on hold):
-                            place book on hold
-                            hold_for_person's position in line is 1
+                        if (book.hold != True):
+                            book.hold = True
+                            hold_for.line_position = 1
                         else:
-                            hold_for_person's position in line is # of people in line + 1
-                    else:
-                        print("You can check this out now!")
+                            hold_for.line_position =
+                        print("This book is available for checkout.")
                 else:
-                    print("Sorry, you can't borrow this book")
+                    print("Sorry, you can't check out this book.")
             else:
                 print("Sorry, you can't place holds unless you're a librarian.")
         renew(book, new_return_date)
