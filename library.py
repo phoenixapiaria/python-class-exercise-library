@@ -33,9 +33,9 @@ class Book:
         hold(book, hold_for_person)
         def hold(Book, hold_for, Person):
         #check to see if the person doing the hold is a librarian
-            if Person = is_Librarian
+            if Person = Librarian
             #check to see if hold_for_person is a borrower
-                if (hold_for = is_Borrower):
+                if (hold_for = Borrower):
                 #make sure the book is already checked out
                     if (Book.checked_out = True):
                     #check to see whether others have put the book on hold
